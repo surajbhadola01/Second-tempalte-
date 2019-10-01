@@ -79,6 +79,7 @@
 .client-icon:hover{
     background: black;
     color: #fff;
+    
 }
 .carousel-indicators{
     bottom: -55px;
@@ -89,6 +90,19 @@
     border-radius: 50%;
     background: #000;
 }
+
+#pricing{
+    background: #fff;
+    margin-bottom: 0 !important;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
 /*----------------------responsive coding----------------------------*/
 @media(max-width:768px){
     #home p{

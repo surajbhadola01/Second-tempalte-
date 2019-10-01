@@ -42,8 +42,8 @@
        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
        <li class="nav-item"><a href="#service" class="nav-link">Services</a></li>
        <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
-       <li class="nav-item"><a href="#clients" class="nav-link disabled">Clients</a></li>
-       <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact US</a>
+       <li class="nav-item"><a href="#clients" class="nav-link ">Clients</a></li>
+       <li class="nav-item dropdown"><a href="#contact" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact US</a>
     
         <div class="dropdown-menu">
             <a href="#" class="dropdown-item">Phone Numbers</a>
@@ -262,13 +262,100 @@
 </div>
 <!--end pricing-->
 
+<!--start contact-->
+<div class="jumbotron jumbotron-fluid bg-warning mb-0" id="contact">
+  <div class="container-fluid">
+        <h1 class="main-font text-center text-light">Contact</h1>
+    <div class="row">
+        <div class="col-md-4  px-5 py-2">
+            <form >
+                <div class="form-group">
+                    <label for="username">Your Name</label>
+                    <input type="text" name="username" id="username" class="form-control ">
+                </div>
 
+                <div class="form-group">
+                    <label for="number">Phone Number</label>
+                    <input type="number" name="number" id="number" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Id</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                </div>
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-accept">Send Us</button>
+            </form>
+        </div>
+
+
+        <div class="col-md-4 px-5 py-2">
+            <h5 class="mb-0">Address</h5>
+            <address>Lorem ipsum dolor sit amet.</address>
+
+            <h5 class="mb-0">Contact no</h5>
+            <address style="font-size: 12px;font-weight:bold">+91 9876543210 , +91 9876543210</address>
+
+            <h5 class="mb-0">Website</h5>
+            <address style=" font-weight:bold"> surajbhadola.com</address>
+
+            <h5 class="mb-0">Email</h5>
+            <address style=" font-weight:bold"> surajbhadola@gmail.com</address>
+        </div>
+
+
+        <div class="col-md-4 px-5 py-2">
+            <h5>Follow US</h5>
+            <a href="#"><i class="fa fa-facebook client-icon text-center "></i></a>
+                <a href="#"></a><i class="fa fa-instagram client-icon text-center"></i></a>
+                <a href="#"></a><i class="fa fa-twitter client-icon text-center"></i></a>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+<!--end contact-->
 
 <script src="wow.min.js"></script>
 
 <script>
 new WOW().init(); /* calling wow api*/
+$(document).ready(function(){
+    $(".navbar ul li a").click(function(e){
+        e.preventDefault();//to disable anchor tag show that it don't work
+        var href_value = this.hash; //it will give href value from <a> tag
+        $("html").animate({
+            scrollTop:$(href_value).offset().top
+        },500,function(){
+            window.location.hash = href_value;
+        }); 
+    });
+});
 </script>
 
+
+<!--start modal-->
+<div class="modal fade" id="form-accept">  <!--modal class is used to unlock the position and to hide also-->
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header bg-warning">
+            <i class="fa fa-close " data-dismiss="modal"></i>
+            <h1>surajbhadola.com</h1>
+        </div>
+
+        <div class="modal-body">
+            <h3>Thanks</h3>
+            <p>We will call you shortly.</p>
+        </div>
+
+        <div class="modal-footer bg-warning">
+            <p>Designed by Suraj Bhadola</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--end modal-->
 </body>
 </html>
