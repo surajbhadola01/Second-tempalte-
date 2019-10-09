@@ -1,241 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="animate.css">
-  
-  <script src="js/jQuery.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="animate.css">
     
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
     <title>Document</title>
     <style>
-    body{
-        background: #ddd;
-    }
+        body {
+            background: #ddd;
+        }
     </style>
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="250">
-<nav class="navbar navbar-expand-md bg-light navbar-light top-nav fixed-top">
-    <a href="#" class="navbar-brand">
-        <img src="images/author.png" alt="a"  width="40" class="logo">
-        surajbhadola.com</a>
+    <nav class="navbar navbar-expand-md bg-light navbar-light top-nav fixed-top">
+        <a href="#" class="navbar-brand">
+            <img src="images/author.png" alt="a" width="40" class="logo">
+            surajbhadola.com</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#slider">
             <span class="navbar-toggler-icon"></span>
         </button>
-<div class="collapse navbar-collapse" id="slider">
-   <ul class="navbar-nav">
-       <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-       <li class="nav-item"><a href="#service" class="nav-link">Services</a></li>
-       <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
-       <li class="nav-item"><a href="#clients" class="nav-link ">Clients</a></li>
-       <li class="nav-item dropdown"><a href="#contact" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact US</a>
-    
-        <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">Phone Numbers</a>
-            <a href="#" class="dropdown-item">Address</a>
-        </div>
-    </li>
-   </ul>
+        <div class="collapse navbar-collapse" id="slider">
+            <ul class="navbar-nav top-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#service" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#clients" class="nav-link ">Clients</a></li>
+                <li class="nav-item dropdown"><a href="#contact" class="nav-link dropdown-toggle"
+                        data-toggle="dropdown">Contact US
+						
+						<sup><span class="badge badge-danger badge-pill animated infinite pulse"><i class="fa fa-envelope"></i> NEW</span></sup>
+						
+						</a>
 
-   <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-instagram"></i></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter"></i></a></li>
-    </ul>
-</div>
-</nav>
-                   <!--start top header add-->
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Phone Numbers</a>
+                        <a href="#" class="dropdown-item">Address</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal"
+                        data-target="#account-modal">Account</a></li>
+            </ul>
 
-<div class="jumbotron jumbotron-fluid" id="home">
-    <div class="container text-center">
-    <h1 class="animated fadeIn">Web development</h1>
-    <p class="animated fadeIn slower">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium explicabo distinctio molestiae doloremque non. Placeat saepe error </p>
-    <img src="images/mobile.png" alt="a" width="80%" class="animated  slideInUp delay-2s">
-    </div>
-</div>
-                    <!--end top header add-->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--start top header add-->
 
-                    <!--start services-->
-<div class="jumbotron jumbotron-fluid bg-light text-center" id="service">
-    <h1 class="main-font service-header">SERVICES</h1>
-    <div class="row">
-        <div class="col-md-4 service-col">
-            <i class="fa fa-code service-icon"></i>
-            <h5 > Mobile App Development</h5>
-                <span >
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea maxime temporibus labore voluptatem nam animi iusto suscipit adipisci, explicabo libero.
-                </span>
-        </div>
-        <div class="col-md-4 service-col">
-            <i class="fa fa-code service-icon"></i>
-            <h5 > Mobile App Development</h5>
-                <span >
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea maxime temporibus labore voluptatem nam animi iusto suscipit adipisci, explicabo libero.
-                </span>
-        </div>
-        <div class="col-md-4 service-col">
-            <i class="fa fa-code service-icon"></i>
-            <h5 > Mobile App Development</h5>
-                <span >
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea maxime temporibus labore voluptatem nam animi iusto suscipit adipisci, explicabo libero.
-                </span>
+    <div class="jumbotron jumbotron-fluid collapse show" id="home">
+        <div class="container text-center">
+            <h1 class="animated fadeIn">Web development</h1>
+            <p class="animated fadeIn slower">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                explicabo distinctio molestiae doloremque non. Placeat saepe error </p>
+            <img src="images/mobile.png" alt="a" width="80%" class="animated  slideInUp delay-2s">
         </div>
     </div>
-</div>
+    <!--end top header add-->
+
+    <!--start services-->
+    <div class="jumbotron jumbotron-fluid bg-light text-center collapse show" id="service">
+        <h1 class="main-font service-header">SERVICES</h1>
+        <div class="row">
+            <div class="col-md-4 service-col">
+                <i class="fa fa-code service-icon"></i>
+                <h5> Mobile App Development</h5>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea maxime temporibus labore voluptatem nam
+                    animi iusto suscipit adipisci, explicabo libero.
+                </span>
+            </div>
+            <div class="col-md-4 service-col">
+                <i class="fa fa-code service-icon"></i>
+                <h5> Mobile App Development</h5>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea maxime temporibus labore voluptatem nam
+                    animi iusto suscipit adipisci, explicabo libero.
+                </span>
+            </div>
+            <div class="col-md-4 service-col">
+                <i class="fa fa-code service-icon"></i>
+                <h5> Mobile App Development</h5>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea maxime temporibus labore voluptatem nam
+                    animi iusto suscipit adipisci, explicabo libero.
+                </span>
+            </div>
+        </div>
+    </div>
 
 
-                    <!--end services-->
+    <!--end services-->
 
-<!--start clients-->
+    <!--start clients-->
 
-<div class="jumbotron jumbotron-fluid" id="clients">
-<h1 class="main-font text-center" style="margin-bottom: 40px">CLIENTS</h1>
-    <div id="myclient" class="container carousel slide" data-ride="carousel" data-interval="1900">
+    <div class="jumbotron jumbotron-fluid" id="clients">
+        <h1 class="main-font text-center" style="margin-bottom: 40px">CLIENTS</h1>
+        <div id="myclient" class="container carousel slide" data-ride="carousel" data-interval="1900">
 
             <ol class="carousel-indicators">
-                    <li data-target="#slider" data-slide-to="0"></li>
-                    <li data-target="#slider" data-slide-to="1"></li>
-                    <li data-target="#slider" data-slide-to="2"></li>
+                <li data-target="#slider" data-slide-to="0"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+                <li data-target="#slider" data-slide-to="2"></li>
             </ol>
 
-        <div class="carousel-inner text-center" >
-            <div class="carousel-item active">
-        
-                <div class="client-pic mx-auto">
-                    <img src="images/person_1.jpg" alt="a" width="100%">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+
+                    <div class="client-pic mx-auto">
+                        <img src="images/person_1.jpg" alt="a" width="100%">
+                    </div>
+                    <h3>Suraj Bhadola</h3>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati <br
+                            class="d-none d-md-block">dignissimos magnam, deserunt voluptates nemo laborum dolorum
+                    </span>
+                    <br>
+                    <a href="#"><i class="fa fa-facebook client-icon"></i></a>
+                    <a href="#"></a><i class="fa fa-instagram client-icon"></i></a>
+                    <a href="#"></a><i class="fa fa-twitter client-icon"></i></a>
                 </div>
-                <h3>Suraj Bhadola</h3>
-                <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati <br class="d-none d-md-block">dignissimos magnam, deserunt voluptates nemo laborum dolorum 
-                </span>
-                <br>
-                <a href="#"><i class="fa fa-facebook client-icon"></i></a>
-                <a href="#"></a><i class="fa fa-instagram client-icon"></i></a>
-                <a href="#"></a><i class="fa fa-twitter client-icon"></i></a>
-            </div>
 
-            <div class="carousel-item">
+                <div class="carousel-item">
                     <div class="client-pic mx-auto">
-                            <img src="images/person_2.jpg" alt="a" width="100%">
-                        </div>
-                        <h3>Suraj Bhadola</h3>
-                        <span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati <br class="d-none d-md-block">dignissimos magnam, deserunt voluptates nemo laborum dolorum 
-                        </span>
-                        <br>
-                        <a href="#"><i class="fa fa-facebook client-icon"></i></a>
-                        <a href="#"></a><i class="fa fa-instagram client-icon"></i></a>
-                        <a href="#"></a><i class="fa fa-twitter client-icon"></i></a>
-                
-                
-            </div>
+                        <img src="images/person_2.jpg" alt="a" width="100%">
+                    </div>
+                    <h3>Suraj Bhadola</h3>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati <br
+                            class="d-none d-md-block">dignissimos magnam, deserunt voluptates nemo laborum dolorum
+                    </span>
+                    <br>
+                    <a href="#"><i class="fa fa-facebook client-icon"></i></a>
+                    <a href="#"></a><i class="fa fa-instagram client-icon"></i></a>
+                    <a href="#"></a><i class="fa fa-twitter client-icon"></i></a>
 
-            <div class="carousel-item">
+
+                </div>
+
+                <div class="carousel-item">
                     <div class="client-pic mx-auto">
-                            <img src="images/person_3.jpg" alt="a" width="100%">
-                        </div>
-                        <h3>Suraj Bhadola</h3>
-                        <span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati <br class="d-none d-md-block">dignissimos magnam, deserunt voluptates nemo laborum dolorum 
-                        </span>
-                        <br>
-                        <a href="#"><i class="fa fa-facebook client-icon"></i></a>
-                        <a href="#"></a><i class="fa fa-instagram client-icon"></i></a>
-                        <a href="#"></a><i class="fa fa-twitter client-icon"></i></a>
+                        <img src="images/person_3.jpg" alt="a" width="100%">
+                    </div>
+                    <h3>Suraj Bhadola</h3>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut obcaecati <br
+                            class="d-none d-md-block">dignissimos magnam, deserunt voluptates nemo laborum dolorum
+                    </span>
+                    <br>
+                    <a href="#"><i class="fa fa-facebook client-icon"></i></a>
+                    <a href="#"></a><i class="fa fa-instagram client-icon"></i></a>
+                    <a href="#"></a><i class="fa fa-twitter client-icon"></i></a>
+                </div>
             </div>
+            <a role="button" class="carousel-control-prev" href="#myclient" data-slide="prev">
+                <i class="fa fa-chevron-left" style="color: black;font-size:20px"></i>
+            </a>
+
+            <a role="button" class="carousel-control-next" href="#myclient" data-slide="next">
+                <i class="fa fa-chevron-right" style="color: black;font-size:20px"></i>
+            </a>
         </div>
-        <a role="button" class="carousel-control-prev" href="#myclient" data-slide="prev">
-        <i class="fa fa-chevron-left" style="color: black;font-size:20px"></i>
-        </a>
-
-        <a role="button" class="carousel-control-next"href="#myclient" data-slide="next">
-            <i class="fa fa-chevron-right" style="color: black;font-size:20px"></i>
-        </a>
     </div>
-</div>
-<!--end clients-->
+    <!--end clients-->
 
-<!--start pricing-->
-<div class="jumbotron jumbotron-fluid" id="pricing">
-    <h1 class="main-font text-center " style="margin-bottom: 30px">Pricing</h1>
-    <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-4 mb-5 px-4">
-            <div class="card wow slideInLeft" >
-                <div class="card-header bg-danger text-light text-center">
-                    <h5>Starter Plan</h5>
-                </div>
-                <div class="card-body text-center">
-                    
-                    <h2>$10 /MO</h2>
-                    <hr>
-                    <span>Stactic App</span>
-                    <hr>
-                    <span>Specially for Android</span>
-                    <hr>
-                    <span>Load Time Faster</span>
-                    <hr>
-                    <span>No Future Update</span>
-                    <hr>
-                    <span>No Customer Supports</span>
-                    <hr>
-                    <span>Paid Maintainance</span>
-                </div>
-                <div class="card-footer bg-danger text-light text-center">
-                    <button class="btn bg-light"><a class="text-decoration-none text-dark" href="#">More Info</a></button>
-                </div>
-            </div>
-        </div>
+    <!--start pricing-->
+    <div class="jumbotron jumbotron-fluid" id="pricing">
+        <h1 class="main-font text-center " style="margin-bottom: 30px">Pricing</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 mb-5 px-4">
+                    <div class="card wow slideInLeft">
+                        <div class="card-header bg-danger text-light text-center">
+                            <h5>Starter Plan</h5>
+                        </div>
+                        <div class="card-body text-center">
 
-        <div class="col-md-4 mb-5 px-4">
-                <div class="card wow slideInUp">
-                    <div class="card-header bg-primary text-light text-center">
-                        <h5>Premium Plan</h5>
-                    </div>
-                    <div class="card-body text-center">
-                        
-                        <h2>$50 /MO</h2>
-                        <hr>
-                        <span>Stactic App</span>
-                        <hr>
-                        <span>Specially for Android</span>
-                        <hr>
-                        <span>Load Time Faster</span>
-                        <hr>
-                        <span>No Future Update</span>
-                        <hr>
-                        <span>No Customer Supports</span>
-                        <hr>
-                        <span>Paid Maintainance</span>
-                    </div>
-                    <div class="card-footer bg-primary text-light text-center">
-                        <button class="btn bg-light"><a class="text-decoration-none text-dark" href="#">More Info</a></button>
+                            <h2>$10 /MO</h2>
+                            <hr>
+                            <span>Stactic App</span>
+                            <hr>
+                            <span>Specially for Android</span>
+                            <hr>
+                            <span>Load Time Faster</span>
+                            <hr>
+                            <span>No Future Update</span>
+                            <hr>
+                            <span>No Customer Supports</span>
+                            <hr>
+                            <span>Paid Maintainance</span>
+                        </div>
+                        <div class="card-footer bg-danger text-light text-center">
+                            <button class="btn bg-light"><a class="text-decoration-none text-dark" href="#">More
+                                    Info</a></button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-4 mb-5 px-4">
+                <div class="col-md-4 mb-5 px-4">
+                    <div class="card wow slideInUp">
+                        <div class="card-header bg-primary text-light text-center">
+                            <h5>Premium Plan</h5>
+                        </div>
+                        <div class="card-body text-center">
+
+                            <h2>$50 /MO</h2>
+                            <hr>
+                            <span>Stactic App</span>
+                            <hr>
+                            <span>Specially for Android</span>
+                            <hr>
+                            <span>Load Time Faster</span>
+                            <hr>
+                            <span>No Future Update</span>
+                            <hr>
+                            <span>No Customer Supports</span>
+                            <hr>
+                            <span>Paid Maintainance</span>
+                        </div>
+                        <div class="card-footer bg-primary text-light text-center">
+                            <button class="btn bg-light"><a class="text-decoration-none text-dark" href="#">More
+                                    Info</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-5 px-4">
                     <div class="card wow slideInRight">
                         <div class="card-header bg-warning text-light text-center">
                             <h5>Business Plan</h5>
                         </div>
                         <div class="card-body text-center">
-                            
+
                             <h2>$100 /MO</h2>
                             <hr>
                             <span>Stactic App</span>
@@ -251,111 +272,335 @@
                             <span>Paid Maintainance</span>
                         </div>
                         <div class="card-footer bg-warning text-light text-center">
-                            <button class="btn bg-light"><a class="text-decoration-none text-dark" href="#">More Info</a></button>
+                            <button class="btn bg-light"><a class="text-decoration-none text-dark" href="#">More
+                                    Info</a></button>
                         </div>
                     </div>
                 </div>
 
 
+            </div>
+        </div>
     </div>
-    </div>
-</div>
-<!--end pricing-->
+    <!--end pricing-->
 
-<!--start contact-->
-<div class="jumbotron jumbotron-fluid bg-warning mb-0" id="contact">
-  <div class="container-fluid">
-        <h1 class="main-font text-center text-light">Contact</h1>
-    <div class="row">
-        <div class="col-md-4  px-5 py-2">
-            <form >
-                <div class="form-group">
-                    <label for="username">Your Name</label>
-                    <input type="text" name="username" id="username" class="form-control ">
+    <!--start contact-->
+
+    <div class="jumbotron jumbotron-fluid bg-warning mb-0" id="contact">
+        <div class="container-fluid">
+            <h1 class="main-font text-center text-light">Contact</h1>
+            <div class="row">
+                <div class="col-md-4  px-5 py-2">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Your Name</label>
+                            <input type="text" name="username" id="username" class="form-control ">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="number">Phone Number</label>
+                            <input type="number" name="number" id="number" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Id</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+
+                        <button type="button" class="btn btn-primary">Send Us</button>
+                    </form>
                 </div>
 
-                <div class="form-group">
-                    <label for="number">Phone Number</label>
-                    <input type="number" name="number" id="number" class="form-control">
+
+                <div class="col-md-4 px-5 py-2">
+                    <h5 class="mb-0">Address</h5>
+                    <address>Lorem ipsum dolor sit amet.</address>
+
+                    <h5 class="mb-0">Contact no</h5>
+                    <address style="font-size: 12px;font-weight:bold">+91 9876543210 , +91 9876543210</address>
+
+                    <h5 class="mb-0">Website</h5>
+                    <address style=" font-weight:bold"> surajbhadola.com</address>
+
+                    <h5 class="mb-0">Email</h5>
+                    <address style=" font-weight:bold"> surajbhadola@gmail.com</address>
                 </div>
 
-                <div class="form-group">
-                    <label for="email">Email Id</label>
-                    <input type="email" name="email" id="email" class="form-control">
+
+                <div class="col-md-4 px-5 py-2">
+                    <h5>Follow US</h5>
+                    <a href="#"><i class="fa fa-facebook client-icon text-center "></i></a>
+                    <a href="#"></a><i class="fa fa-instagram client-icon text-center"></i></a>
+                    <a href="#"></a><i class="fa fa-twitter client-icon text-center"></i></a>
                 </div>
 
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-accept">Send Us</button>
-            </form>
-        </div>
 
-
-        <div class="col-md-4 px-5 py-2">
-            <h5 class="mb-0">Address</h5>
-            <address>Lorem ipsum dolor sit amet.</address>
-
-            <h5 class="mb-0">Contact no</h5>
-            <address style="font-size: 12px;font-weight:bold">+91 9876543210 , +91 9876543210</address>
-
-            <h5 class="mb-0">Website</h5>
-            <address style=" font-weight:bold"> surajbhadola.com</address>
-
-            <h5 class="mb-0">Email</h5>
-            <address style=" font-weight:bold"> surajbhadola@gmail.com</address>
-        </div>
-
-
-        <div class="col-md-4 px-5 py-2">
-            <h5>Follow US</h5>
-            <a href="#"><i class="fa fa-facebook client-icon text-center "></i></a>
-                <a href="#"></a><i class="fa fa-instagram client-icon text-center"></i></a>
-                <a href="#"></a><i class="fa fa-twitter client-icon text-center"></i></a>
-        </div>
-
-
-    </div>
-  </div>
-</div>
-<!--end contact-->
-
-<script src="wow.min.js"></script>
-
-<script>
-new WOW().init(); /* calling wow api*/
-$(document).ready(function(){
-    $(".navbar ul li a").click(function(e){
-        e.preventDefault();//to disable anchor tag show that it don't work
-        var href_value = this.hash; //it will give href value from <a> tag
-        $("html").animate({
-            scrollTop:$(href_value).offset().top
-        },500,function(){
-            window.location.hash = href_value;
-        }); 
-    });
-});
-</script>
-
-
-<!--start modal-->
-<div class="modal fade" id="form-accept">  <!--modal class is used to unlock the position and to hide also-->
-<div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header bg-warning">
-            <i class="fa fa-close " data-dismiss="modal"></i>
-            <h1>surajbhadola.com</h1>
-        </div>
-
-        <div class="modal-body">
-            <h3>Thanks</h3>
-            <p>We will call you shortly.</p>
-        </div>
-
-        <div class="modal-footer bg-warning">
-            <p>Designed by Suraj Bhadola</p>
+            </div>
         </div>
     </div>
-</div>
+
+    <!--end contact-->
+
+
+
+
+    <!--start account modal-->
+    <div class="modal animated pulse delay-2s" id="account-modal">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+
+                <i class="fa fa-times-circle text-warning" style="position: absolute;top:5px;right:5px;z-index: 1000;"
+                    data-dismiss="modal"></i>
+
+                <div class="modal-body">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a href="#login" class="nav-link active" data-toggle="tab">Login</a></li>
+                        <li class="nav-item"><a href="#signup" class="nav-link" data-toggle="tab">Sign Up</a></li>
+                    </ul>
+
+                    <!--start tab content-->
+                    <div class="tab-content pt-3" style="overflow: hidden">
+                        <div id="login" class="tab-pane active animated slideInDown">
+                            <form>
+                                <div class="form-group ">
+                                    <label for="username">Username</label>
+                                    <input type="text" name="username" id="username" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control">
+                                </div>
+
+                                <div class="custom-control custom-switch float-left">
+                                    <input type="checkbox" class="custom-control-input" id="rem-check">
+                                    <label for="rem-check" class="custom-control-label">
+                                        Remember Me
+                                    </label>
+                                </div>
+
+                                <div class="btn btn-primary float-right" type="submit">
+                                    Login
+                                </div>
+
+                            </form>
+                        </div>
+                        <div id="signup" class="tab-pane animated slideInDown">
+
+                            <form>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+
+                                                <span
+                                                    class="input-group-text bg-warning text-light border border-warning">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+
+                                            </div>
+                                            <input type="text" name="firstname" placeholder="firstname"
+                                                class="form-control border-left-0 border-warning">
+
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+
+                                            <input type="text" name="lastname" placeholder="Lastname"
+                                                class="form-control border-warning border-right-0">
+                                            <div class="input-group-append">
+                                                <span
+                                                    class="input-group-text bg-warning border border-warning text-light">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span
+                                                    class="input-group-text bg-danger border border-danger text-light">Gender</span>
+                                            </div>
+
+                                            <select class="form-control border-left-0 border border-danger">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control border-right-0 border border-danger"
+                                                placeholder="DD/MM/YYYY" id="custom-date">
+
+                                            <div class="input-group-append">
+                                                <span
+                                                    class="input-group-text  text-light bg-danger border border-danger">DOB</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                               <span class="input-group-text bg-primary text-light border border-primary"> Mobiles</span>
+                                            </div>
+                                            <input type="number" name="fnumber" placeholder="1st Number" class="form-control border-left-0 border-primary">
+
+                                            <input type="number" name="snumber" placeholder="2nd Number" class="form-control border-primary">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item bg-success text-light">Occupation</li>
+
+                                    <li class="list-group-item">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" name="Occupation" id="student" class="custom-control-input">
+                                            <label for="student" class="custom-control-label">Student</label>
+                                        </div>
+                                    </li>
+                                </li>
+                                    <li class="list-group-item mb-3">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" name="Occupation" id="professional" class="custom-control-input">
+                                            <label for="professional" class="custom-control-label">Professional</label>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="list-group list-group-horizontal mb-3">
+                                    <li class="list-group-item">
+                                        Income
+                                    </li>
+
+                                    <li class="list-group-item w-100">
+                                        <input type="range" min="0" max="100" class="custom-range">
+                                    </li>
+                                </ul>
+
+                                <div class="custom-file mb-3">
+                                    <input type="file" accept="image/*" id="upload" class="custom-file-input">
+                                    <label for="upload" class="custom-file-label">Upload File</label>
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    
+                                    <input type="text" placeholder="choose file" class="form-control bg-light" disabled="disabled" id="upl">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text bg-primary border border-primary text-light" id="upload-active" style="cursor: pointer">Browse</span>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-danger text-light">Address</span>
+                                    </div>
+                                    
+                                    <textarea name="address" id="" class="form-control"></textarea>
+                                </div>
+
+                                <div class="custom-control custom-switch float-lg-left">
+                                    <input type="checkbox" name="accept" id="accept" class="custom-control-input">
+                                    <label for="accept" class="custom-control-label"> I accept</label>
+                                </div>
+
+                                <button class="btn btn-danger text-light float-lg-right" type="submit" >Sign Up</button>
+
+                            </form>
+
+
+                        </div>
+                    </div>
+                    <!--end tab content-->
+                </div>
+
+                <div class="modal-footer bg-warning">
+                    <p class="mx-auto">You don't have an Account <a href="#">Create Now</a></p>
+                    <!--mr-auto and ml-auto can also be used but other then that cannot be used like flaot-left right etc.-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--end modal-->
+    <script src="wow.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#custom-date").datepicker();
+        });
+
+        new WOW().init(); /* calling wow api*/
+        $(document).ready(function () {
+            $(".navbar ul li a").click(function (e) {
+                e.preventDefault(); //to disable anchor tag show that it don't work
+                var href_value = this.hash; //it will give href value from <a> tag
+                $("html").animate({
+                    scrollTop: $(href_value).offset().top
+                }, 500, function () {
+                    window.location.hash = href_value;
+                });
+            });
+        });
+
+
+        /*retrive file name upload button*/
+
+        $(document).ready(function(){
+            $("#upload").on("change",function(){
+                var file_name = this.files[0].name;
+                $(".custom-file-label").html(file_name);
+            });
+        });
+
+
+        /*custom upload coding*/
+
+     
+    </script>
+
+    <script>
+           $(document).ready(function(){
+            $("#upload-active").click(function(){
+                var input = document.createElement("INPUT");
+                input.type = "file";
+                input.accept = "image/*";
+                input.click();
+                input.onchange = function(){
+                    var file_name = this.files[0].name;
+                    document.querySelector("#upload").placeholder = file_name;
+                    $("#upl").attr("placeholder",file_name); 
+                    
+                }
+            });
+        });
+    </script>
+
+<!--start close-->
+
+<div style="position: fixed;top:150px;left: -5px;">
+    <button class="btn btn-danger dropdown-toggle rounded-0 shadow-sm" data-toggle="dropdown">Close</button>
+    <div class="dropdown-menu">
+        <a href="#home" class="dropdown-item" data-toggle="collapse">Home</a>
+        <a href="#service" class="dropdown-item" data-toggle="collapse">Services</a>
+        <a href="#" class="dropdown-item">Protfolio</a>
+        <a href="#" class="dropdown-item">About Us</a>
+    </div>
 </div>
 
-<!--end modal-->
 </body>
+
 </html>
